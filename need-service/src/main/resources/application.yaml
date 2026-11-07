@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: need-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/sevasetu_db
+    username: root
+    password: "${DB_PASSWORD}"
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8082
